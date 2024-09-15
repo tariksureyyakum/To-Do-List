@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+/* Genel Stil Ayarları */
+body {
+  background-color: #f8f9fa; /* Açık gri arka plan rengi */
+  font-family: Arial, sans-serif; /* Basit ve okunabilir font */
+  color: #343a40; /* Koyu gri metin rengi */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* App Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #007bff; /* Bootstrap birincil mavi rengi */
   color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #0056b3; /* Koyu mavi alt sınır */
 }
 
-.App-link {
-  color: #61dafb;
+/* Todo List Kartı */
+.card {
+  border-radius: 8px; /* Yuvarlatılmış köşeler */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  background-color: #ffffff; /* Beyaz arka plan */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px; /* Maksimum genişlik */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Todo List Başlık */
+.card-header {
+  background-color: #758595; /* Başlık için mavi arka plan */
+  color: white;
+  border-bottom: 1px solid #0056b3; /* Koyu mavi alt sınır */
+}
+
+/* Form Stilleri */
+.form-control {
+  border-radius: 4px; /* Yuvarlatılmış köşeler */
+}
+
+.btn {
+  border-radius: 4px; /* Yuvarlatılmış köşeler */
+}
+
+/* Liste Öğeleri */
+.list-group-item {
+  border: 1px solid #dee2e6; /* Açık gri sınır */
+  border-radius: 4px; /* Yuvarlatılmış köşeler */
+  margin-bottom: 10px;
+}
+
+/* Button Stilleri */
+.btn-primary {
+  background-color: #007bff; /* Mavi buton rengi */
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Kırmızı buton rengi */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Hover durumunda koyu mavi */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Hover durumunda koyu kırmızı */
+}
+/* Bootstrap container ile sağ ve sol boşluk bırakma */
+
+/* Butonun ortalanması ve boyutunun artırılması */
+.centered-button {
+  display: flex;
+  justify-content: center; /* Butonu yatayda ortalar */
+  margin-top: 10px; /* Butonun üst kısmında boşluk */
+}
+
+.btn-large {
+  font-size: 1.2rem; /* Font boyutunu artırma */
+  padding: 0.75rem 1.5rem; /* Butonun iç boşluklarını artırma */
+  width: 100%; /* Butonu tam genişlikte yapar */
+  max-width: 600px; /* Maksimum genişliği ayarlar (isteğe bağlı) */
+  display: block; /* Butonu tam genişlikte göstermek için blok elemanı yapar */
 }
